@@ -1,0 +1,168 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+COURSES : RIT
+{% endblock title %}
+
+{% block maincss %}
+
+<style>
+    .top-cover {
+        width: 100%;
+        background-color: black;
+    }
+
+    .cover {
+        width: 100%;
+        opacity: 0.5;
+
+    }
+
+    .dropdown-menu {
+        animation-name: Mzoom;
+        animation-duration: .4s;
+        /* for animation on hover*/
+
+    }
+
+    .dropdown:hover>.dropdown-menu {
+
+        display: block;
+    }
+
+    @keyframes Mzoom {
+        from {
+            opacity: 0;
+            transform: scale3d(.2, .2, .2);
+            -webkit-transform: scale3d(.2, .2, .2);
+        }
+
+        50% {
+            opacity: 1;
+        }
+    }
+</style>
+
+{% endblock maincss %}
+
+{% block pagetop %}
+<section class="top-cover">
+    <img src="{% static 'images/ep40.jpg' %}" class="cover" alt="Cover Image Loading...">
+</section>
+{% endblock pagetop %}
+
+{% block pagecontent %}
+
+<section class="text-gray-700 body-font">
+    <div class="flex flex-col text-center w-full mt-4 mb-10">
+        <h1 class="text-4xl font-medium title-font mb-2 text-blue-700">CORSES AT RIT</h1>
+        <div class="flex mb-2 justify-center">
+            <div class="w-24 h-1 rounded-full bg-blue-600 inline-flex"></div>
+        </div>
+        <p class="lg:w-2/2 sm:text-2xl font-medium text-2xl text-gray-700 mx-auto leading-relaxed text-base">Currently,
+            RIT offeres two most demanded courses in today modern world which is given below with brief information and
+            all other details. Please go through it.</p>
+    </div>
+
+    <div class="container px-5 py-24 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full"
+                    src="https://source.unsplash.com/1200x500/?coding,programming">
+            </div>
+            <div class="flex flex-col text-center w-full mb-2">
+                <h1 class="text-4xl font-medium title-font mt-3 text-blue-700">INFORMATION TECHNOLOGY</h1>
+                <div class="flex mb-2 justify-center">
+                    <div class="w-24 h-1 rounded-full bg-blue-600 inline-flex"></div>
+                </div>
+
+            </div>
+            <div class="flex flex-col sm:flex-row mt-1">
+                <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                    <div class=" rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                        <img alt="team" class=" bg-gray-100 object-center flex-shrink-0 rounded-full "
+                            src="{% static 'images/sp3(1).png' %}">
+                    </div>
+                    <div class="flex flex-col items-center text-center justify-center">
+                        <h2 class="font-medium title-font mt-1 text-gray-900 text-lg">Mrs. Sunita Kr.Chaurasia</h2>
+                        <div class="w-12 h-1 bg-blue-500 rounded mt-2 mb-1"></div>
+                        <h3 class="text-gray-600 mb-2">H.O.D OF ITESM COURSE</h3>
+                        <p class="text-base text-gray-700">.</p>
+                    </div>
+                </div>
+                <div
+                    class="sm:w-2/3 sm:pl-8  text-left sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-1 pt-4 sm:mt-0 text-left sm:text-left">
+                    <p class="text-3xl font-medium title-font mb-1 text-gray-700">Details about ITES&M Course</p>
+                    <p class="leading-relaxed text-lg mb-4">Diploma in Information Technology Enabled Services And
+                        Management(ITES&M) has been defined and designed to meet the growing need of KPO, BPO and other
+                        organizations providing IT Enabled Services.
+                        Course Contents have been designed to fill the vacuum between academics, Computers and IT
+                        Enabled Service Sector. Department builds professional competency in students by combining
+                        theory with exhaustive practical training. Communication Skills have been given due importance.
+                        Elective subjects like IT Laws and Patents, Cyber Crimes, Computer Graphics and Multimedia are
+                        being taught besides basic science and core subjects. Industrial Training has been made an
+                        integral part of the curriculum. Department maintains well equipped and modern labs like Data
+                        Base Management Systems, Computer Networking, Multimedia, Software Lab, Web Site Designing Lab,
+                        Hardware Lab, Communication Lab for languages like English</p>
+                    <a class="text-blue-500 inline-flex items-center">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+            <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full"
+                    src="https://source.unsplash.com/1200x500/?motherboard,harware">
+            </div>
+            <div class="flex flex-col text-center w-full mb-2">
+                <h1 class="text-4xl font-medium title-font mt-3 text-blue-700">COMPUTER ENGINEERING</h1>
+                <div class="flex mb-2 justify-center">
+                    <div class="w-24 h-1 rounded-full bg-blue-600 inline-flex"></div>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row mt-1">
+                <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                    <div class=" rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                        <img alt="team" class=" bg-gray-100 object-center flex-shrink-0 rounded-full "
+                            src="{% static 'images/sp5(1).png' %}">
+                    </div>
+                    <div class="flex flex-col items-center text-center justify-center">
+                        <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Mr R.P Yadav</h2>
+                        <div class="w-12 h-1 bg-blue-500 rounded mt-2 mb-1"></div>
+                        <h3 class="text-gray-600 mb-2">H.O.D OF CE COURSE</h3>
+                        <p class="text-base text-gray-700"></p>
+                    </div>
+                </div>
+                <div
+                    class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-0 pt-4 sm:mt-0 text-left sm:text-left">
+                    <p class="text-3xl font-medium title-font mt-3 text-gray-700">Details about CE Course</p>
+                    <p class="leading-relaxed text-lg mb-4">Computer Engineering(CE) is one of the popular courses among
+                        engineering aspirants which focuses on the basic elements of computer programming and
+                        networking. Students pursuing computer engineering courses will gain knowledge of design,
+                        implementation and management of information system of both hardware and software. Going by the
+                        name, CE course deals primarily with the theory of computation and design of computational
+                        systems. The course is offered across the globe in technical institutions at undergraduate as
+                        well as postgraduate levels awarding B.Tech and M.Tech degrees, respectively.</p>
+                    <a class="text-blue-500 inline-flex items-center">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock pagecontent %}

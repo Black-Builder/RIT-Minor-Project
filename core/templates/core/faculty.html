@@ -1,0 +1,538 @@
+{% extends 'core/base.html' %}
+{% load static %}
+    
+    {% block maincss %}
+    <style>
+    .top-cover{
+        width: 100%;
+        background-color: black;
+    }
+
+    .cover{
+        width: 100%;
+        opacity: 0.5;
+    
+    }
+    .dropdown-menu {
+        animation-name: Mzoom;
+        animation-duration: .4s;
+        /* for animation on hover*/
+
+    }
+
+    .dropdown:hover>.dropdown-menu {
+
+        display: block;
+    }
+
+    @keyframes Mzoom {
+        from {
+            opacity: 0;
+            transform: scale3d(.2, .2, .2);
+            -webkit-transform: scale3d(.2, .2, .2);
+        }
+
+        50% {
+            opacity: 1;
+        }
+    }
+    </style>
+    {% endblock maincss %}
+    {% comment %} <link rel="stylesheet" href="{% static 'css/faculty.css' %}"> {% endcomment %}
+
+    {% block title %}
+    FACULTY : RIT
+    {% endblock title %}
+    
+    {% block pagetop %}
+
+    <section class="top-cover">
+        <img src="{% static 'images/fp.jpeg' %}" class="cover" alt="Cover Image Loading...">
+    </section>
+    
+    {% endblock pagetop %}
+
+    {% block pagecontent %}
+
+    <section class="text-gray-500 bg-white body-font">
+        <div class="container px-7 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="text-4xl font-medium title-font mb-2 text-blue-700">FACULTY</h1>
+                <div class="flex mb-2 justify-center">
+                    <div class="w-24 h-1 rounded-full bg-blue-600 inline-flex"></div>
+                </div>
+                <p class="lg:w-2/2 sm:text-2xl font-medium text-2xl text-gray-700 mx-auto leading-relaxed text-base">The
+                    faulty that RIT have is most
+                    highly educated ever and highly experienced.
+                    We proud very much on our faulty as they are doing very well
+                    and the cordination between a student and a teacher decides the results</p>
+            </div>
+
+            <div class="container px-7 py-22 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="text-3xl sm:text-3xl font-medium title-font mb-2 text-blue-700">TEACHING FACULTY</h1>
+                    <p
+                        class="lg:w-2/2 sm:text-2xl font-medium text-2xl text-gray-700 mx-auto leading-relaxed text-base">
+                        The
+                        teaching faulty includes all that teachers that teachs students their particular subjects</p>
+                </div>
+            </div>
+            <!-- Gray Faculty -->
+            <div class="flex bg-gray-700 flex-wrap -m-4">
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <!-- <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200"> -->
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp2.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Virender Dagar</h2>
+                            <h3 class="text-gray-500 mt-2">Lecturer & In-Charge (CE)</h3>
+                            <p class="text-gray-300 mt-3">Hi, I have done B.E & M.Tech with 20 years
+                                of teaching experience and joined DTTE on 27/12/2000
+                                and currently, I am part of Rajokari Institute.
+
+                            </p>
+                            <!-- <span class="inline-flex">
+                            <a class="text-gray-800">
+                             <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                             </svg>
+                            </a>
+                             <a class="ml-2 text-gray-700">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                            </a>
+                             <a class="ml-2 text-gray-700">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                             <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                            </svg>
+                            </a>
+                            </span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp3.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mrs. Sunita Kr.Chaurasia</h2>
+                            <h3 class="text-gray-500 mt-2">Lecturer (CE) & In-Charge (ITESM)</h3>
+                            <p class="text-gray-300 mt-3">Hi, I have done B.E & M.Tech in Information Technology with 13
+                                years
+                                of teaching experience and joined DTTE on 29/03/2012
+                                and currenlty, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40  mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp4.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mrs. Jyotit Arora</h2>
+                            <h3 class="text-gray-500 mt-2">Lecturer</h3>
+                            <p class="text-gray-300 mt-3">Hi, I have done M.A with 40 years
+                                of teaching experience and joined DTTE on 22/06/1987
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp5.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr R.P Yadav</h2>
+                            <h3 class="text-gray-500 mt-2">Lecturer</h3>
+                            <p class="text-gray-300 mt-3">Hi, I have done AMIE in Electronics & Communication & M.Tech
+                                in Microwave Engineering with 18 years of teaching experience and joined DTTE on
+                                07/07/2000
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blue-Faculty -->
+            <div class="flex bg-blue-700 flex-wrap mt-4 -m-4">
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <!-- <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200"> -->
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp6.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mrs. Kiran Dhangar</h2>
+                            <h3 class="text-gray-500 mt-2">Lecturer (CE)</h3>
+                            <p class="text-gray-300 mt-3">Hi, I have done B.E & M.Tech in Computer Science with 8 years
+                                of teaching experience and joined on 12/04/2012
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                            <!-- <span class="inline-flex">
+                            <a class="text-gray-800">
+                             <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                             </svg>
+                            </a>
+                             <a class="ml-2 text-gray-700">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                            </a>
+                             <a class="ml-2 text-gray-700">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                             <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                            </svg>
+                            </a>
+                            </span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp7.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Tarun Sharma</h2>
+                            <h3 class="text-gray-500 mt-2">F.L</h3>
+                            <p class="text-gray-300 leading-relaxed text-base mt-3">Hi, I have done Diploma in Mechincal
+                                Engineering with 23 years of teaching of experience and joined DTTE on 28/03/1995
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp8.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Raj Kumar</h2>
+                            <h3 class="text-gray-500 mt-2">Librarian</h3>
+                            <p class="text-gray-300 leading-relaxed text-base mt-3">Hi, I have done M.Lib & Information
+                                Science with 18 years of teaching experience and joined DTTE on 26/12/2008
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp9.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mrs. Monika Garg</h2>
+                            <h3 class="text-gray-500 mt-2">Lecturer</h3>
+                            <p class="text-gray-300 mt-3">Hi, I have done B.Tech & M.Tech in Electronics and
+                                Communications Engineering & pursuing Ph.D with 16 years of teaching experince and
+                                joined DTTE on 10/08/2007
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gray Faculty -->
+            <div class="flex bg-gray-700 flex-wrap mt-4 -m-4">
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <!-- <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200"> -->
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp10.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mrs. Antima Jain</h2>
+                            <h3 class="text-gray-500 mt-2">Lecturer</h3>
+                            <p class="text-gray-300 mt-3">Hi, I have done B.E in Information Technology & M.Tech in
+                                Software Engineering & pursuing Ph.D with 10 years of teaching
+                                experience and joined DTTE on 13/08/2012
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                            <!-- <span class="inline-flex">
+                            <a class="text-gray-800">
+                             <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                             </svg>
+                            </a>
+                             <a class="ml-2 text-gray-700">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                            </a>
+                             <a class="ml-2 text-gray-700">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                             <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                            </svg>
+                            </a>
+                            </span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp11.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mrs. Partibha Singh</h2>
+                            <h3 class="text-gray-500 mt-2">Lecturer</h3>
+                            <p class="text-gray-300 mt-3">Hi, I have done B.Tech & M.Tech in
+                                Computer Science with 6 years of teaching experience and joined on 21/01/2013
+                                and currenlty, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp12.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mrs. Nidhi Chawla</h2>
+                            <h3 class="text-gray-500 mt-2">Lecturer</h3>
+                            <p class="text-gray-300 mt-3">Hi, I have done B.Tech in Information Technology & MBA in
+                                IT,HR & M.Tech in Computer Science with 7 years of teaching
+                                experience and joined on 11/10/2012 and currently, I am
+                                part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp13.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Jai Bhagwan</h2>
+                            <h3 class="text-gray-500 mt-2">C.I</h3>
+                            <p class="text-gray-300 mt-3">Hi, with 20 years of
+                                teaching experience, I have joined DTTE on 07/06/2000
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blue-Faculty -->
+            <div class="flex bg-blue-700 flex-wrap mt-4 -m-4">
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <!-- <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200"> -->
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp15.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr.Mahesh Pal</h2>
+                            <h3 class="text-gray-500 mt-2">W.S.I</h3>
+                            <p class="text-gray-300 mt-3">Hi, with 23 years of
+                                teaching experience, I have joined DTTE on 21/12/1995
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp16.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Mukesh Kumar</h2>
+                            <h3 class="text-gray-500 mt-2">W.S.I</h3>
+                            <p class="text-gray-300 mt-3">Hi, with 13 years of
+                                teaching experience, I have joined DTTE on 06/07/2005
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp17.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Amrit Singh</h2>
+                            <h3 class="text-gray-500 mt-2">W.S.A</h3>
+                            <p class="text-gray-300 mt-3">Hi, with 29 years of
+                                teaching experience, I have joined DTTE on 30/10/1988
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/sp18.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Vinod Kumar</h2>
+                            <h3 class="text-gray-500 mt-2">W.S.A</h3>
+                            <p class="text-gray-300 mt-3">Hi, with 14 years of
+                                teaching experience, I have joined DTTE on 27/04/2004
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container px-7 py-22 mx-auto">
+                <div class="flex flex-col text-center w-full mt-20 mb-10">
+                    <h1 class="text-3xl font-medium title-font mb-2 text-blue-700">NON-TEACHING FACULTY</h1>
+                    <p
+                        class="lg:w-2/2 sm:text-2xl font-medium text-2xl text-gray-700 mx-auto leading-relaxed text-base">
+                        The
+                        non-teaching faulty includes all that teachers that are placed for college works apart for
+                        teaching.</p>
+                </div>
+            </div>
+
+            <!-- Gray Faculty -->
+            <div class="flex bg-gray-700 items-center justify-center flex-wrap mt-4 -m-4">
+                <div class="p-4 lg:w-1/4  md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <!-- <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200"> -->
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/nsp1.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mrs. Sujata Singh</h2>
+                            <h3 class="text-gray-500 mt-2">AAO</h3>
+                            <p class="text-gray-300 mt-3">DIY tote bag drinking vinegar cronut adaptogen squid fanny
+                                pack vaporware.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/nsp2.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Vishal Piplani</h2>
+                            <h3 class="text-gray-500 mt-2">P.A</h3>
+                            <p class="text-gray-300 mt-3">DIY tote bag drinking vinegar cronut adaptogen squid fanny
+                                pack vaporware.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4  md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <!-- <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200"> -->
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/nsp3.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Parvesh Kumar</h2>
+                            <h3 class="text-gray-500 mt-2">Store Keeper</h3>
+                            <p class="text-gray-300 mt-3">DIY tote bag drinking vinegar cronut adaptogen squid fanny
+                                pack vaporware.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/nsp4.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Surender Kumar</h2>
+                            <h3 class="text-gray-500 mt-2">Junior Assistant</h3>
+                            <p class="text-gray-300 mt-3">DIY tote bag drinking vinegar cronut adaptogen squid fanny
+                                pack vaporware.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blue-Faculty -->
+            <div class="flex bg-blue-700 flex-wrap mt-4 -m-4">
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <!-- <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200"> -->
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/nsp5.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Parvesh Kumar</h2>
+                            <h3 class="text-gray-500 mt-2">Junior Assistant</h3>
+                            <p class="text-gray-300 mt-3">Hi, with 23 years of
+                                teaching experience, I have joined DTTE on 21/12/1995
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/nsp6.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mr. Bablu Yadav</h2>
+                            <h3 class="text-gray-500 mt-2">Junior Assistant</h3>
+                            <p class="text-gray-300 mt-3">Hi, with 13 years of
+                                teaching experience, I have joined DTTE on 06/07/2005
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/nsp7.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mrs. Indu Vashist</h2>
+                            <h3 class="text-gray-500 mt-2">D.E.O</h3>
+                            <p class="text-gray-300 mt-3">Hi, with 29 years of
+                                teaching experience, I have joined DTTE on 30/10/1988
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team"
+                            class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mb-4"
+                            src="{% static 'images/nsp8.jpg' %}">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-white">Mrs. Kumari Priti</h2>
+                            <h3 class="text-gray-500 mt-2">D.E.O</h3>
+                            <p class="text-gray-300 mt-3">Hi, with 14 years of
+                                teaching experience, I have joined DTTE on 27/04/2004
+                                and currently, I am part of Rajokari Institute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section End -->
+    {% endblock pagecontent %}

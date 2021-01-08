@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.top-cover{
+    width: 100%;
+    background-color: black;
+}
+
+.cover{
+    width: 100%;
+    opacity: 0.5;
+}
+
+.py-24 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* Top navbar */
+
+.topbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social{
+    position: relative;
+    width: auto;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.social-btn{
+    margin: 3px;
+    padding: 2px;
+    background: none;
+    color: white;
+
+}
+.social-btn:hover{
+    color: dodgerblue;
+}
+.contact{
+    position: relative;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+.contact-btn{
+    margin: 3px;
+    padding: 2px;
+    background: none;
+    color: white;
+
+}
+.contact-btn:hover{
+    color: dodgerblue;
+}
+
+.log-sign{
+    position: relative;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-log{
+    display: inline-block;
+    margin: .3rem;
+    padding: .2rem .8rem .2rem .8rem;
+    border: 2px solid #ced4da;
+    border-radius: 1rem;
+    line-height: 1;
+    font-size: 1.02rem;
+    transition: .3s;
+}
+
+.log-sign a:hover {
+    text-decoration: none;
+}
+
+.btn-log.transparent{
+    background-color: #2b6cb0;
+    color: white;
+}
+
+.btn-log.transparent:hover{
+    background-color: white;
+    color: #2b6cb0;
+}
+.btn-log.solid{
+    background-color: white;
+    color:#2b6cb0;
+}
+
+.btn-log.solid:hover{
+    background-color: #2b6cb0;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center !important;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem .35rem !important;
+    width: auto !important;
+    font-size: 1.1rem !important;
+    margin-left: 6px !important;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.bg-light {
+    background-color: peachpuff;
+    height: 71px;
+}
+
+.navbar-expand-lg .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    padding-left: 0px;
+}
+.dropdown-menu{
+    animation-name: Mzoom;
+    animation-duration: .4s;/* for animation on hover*/
+
+}
+.dropdown:hover>.dropdown-menu{
+
+display: block/* for hover effect*/;
+}
+.navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 5rem 1rem;
+}
+.navbar .navbar-brand a{
+    font-size: 1.3rem;
+}
+.nav-item a{
+    font-size: 1.2rem;
+}
+.alert-dismissible {
+    padding-right: 40px;
+    
+}
+.alert {
+    position: relative;
+    padding: 0.30rem 1.35rem;
+    margin-bottom: 0rem !important;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.parent{
+    position: relative;
+}
+#logo{ 
+    position: relative;
+    display: flex;
+    background-color: dodgerblue;
+}
+#logo-img{
+    display: flex;
+    margin: 7px;
+    height: 4.2rem;   
+}
+#logo-name{
+    /* margin: 0%;
+    color: aliceblue; */
+    /* font-weight: 500; */
+    font-family: 'Bree Serif', serif;
+    /* margin-left: 0.3em;
+    padding-top: 0.4em; */
+}
+
+#nav{
+    height: 13.9vh;
+}

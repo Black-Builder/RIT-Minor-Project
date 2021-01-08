@@ -1,0 +1,219 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block maincss %}
+<style>
+
+        .top-cover {
+                width: 100%;
+                background-color: black;
+        }
+
+        .cover {
+                width: 100%;
+                opacity: 0.5;
+
+        }
+
+        /* make a responsive*/
+        /* Extra small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) {
+                .row .column {
+                        flex: 60%;
+                }
+        }
+
+        /* Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) and (max-width: 767.98px) {
+                .row .column {
+                        flex: 60%;
+                }
+        }
+
+        /* Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+                .row .column {
+                        flex: 60%;
+                }
+        }
+
+        .row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                padding: 0px 4px;
+        }
+
+        .column {
+                -ms-flex: 25%;
+                flex: 25%;
+                padding: 0 4px;
+        }
+
+        .column img {
+                margin-top: 8px;
+                transition: 1s;
+                border-radius: 4px;
+                vertical-align: middle;
+        }
+
+        .column img:hover {
+                filter: grayscale(100%);
+                transform: scale(1.03);
+        }
+
+        .dropdown-menu {
+                animation-name: Mzoom;
+                animation-duration: .4s;
+                /* for animation on hover*/
+
+        }
+
+        .dropdown:hover>.dropdown-menu {
+
+                display: block;
+        }
+
+        @keyframes Mzoom {
+                from {
+                        opacity: 0;
+                        transform: scale3d(.2, .2, .2);
+                        -webkit-transform: scale3d(.2, .2, .2);
+                }
+
+                50% {
+                        opacity: 1;
+                }
+        }
+</style>
+<link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+{% endblock maincss %}
+
+
+{% block js %}
+<script src="{% static 'js/lightbox-plus-jquery.min.js' %}"></script>
+{% endblock js %}
+
+{% block title %}
+GALLERY : RIT
+{% endblock title %}
+
+
+{% block pagetop %}
+
+<section class="top-cover">
+        <img src="{% static 'images/ip.png' %}" class="cover" alt="">
+</section>
+
+{% endblock pagetop %}
+
+{% block pagecontent %}
+
+<section class="text-gray-500 bg-white body-font">
+        <div class="container px-7 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-20">
+                        <h1 class="text-4xl font-medium title-font mb-2 text-blue-700">GALLERY</h1>
+                        <div class="flex mb-2 justify-center">
+                                <div class="w-24 h-1 rounded-full bg-blue-600 inline-flex"></div>
+                        </div>
+                        <p
+                                class="lg:w-2/2 sm:text-2xl font-medium text-2xl text-gray-700 mx-auto leading-relaxed text-base">
+                                All the memorable moments from the begining are here please go through each of them</p>
+                </div>
+                <div class="row">
+                        <div class="column">
+                                <a href="{% static 'images/ip2.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ip2.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep11.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep11.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep29.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep29.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep32.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep32.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep35.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep35.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep46.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep46.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/p3.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/p3.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/p7.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/p7.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep1.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep1.jpeg' %}" style="width:100%"></a>
+
+                        </div>
+                        <div class="column">
+                                <a href="{% static 'images/ip4.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ip4.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep9.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep9.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep25.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep25.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep31.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep31.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep36.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep36.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep37.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep37.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/p2.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/p2.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/p6.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/p6.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/p8.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/p8.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep2.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep2.jpeg' %}" style="width:100%"></a>
+
+                        </div>
+                        <div class="column">
+                                <a href="{% static 'images/cp.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/cp.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep27.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep27.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep19.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep19.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep33.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep33.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep44.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep44.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep39.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep39.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/p1.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/p1.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/p5.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/p5.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/p9.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/p9.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep3.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep3.jpeg' %}" style="width:100%"></a>
+
+                        </div>
+                        <div class="column">
+                                <a href="{% static 'images/ip5.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ip5.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep7.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep7.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep13.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep13.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep30.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep30.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep22.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep22.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep38.jpg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep38.jpg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/sp1.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/sp1.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/p10.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/p10.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static  'images/ep.jpeg' %}" data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static  'images/ep.jpeg' %}" style="width:100%"></a>
+                                <a href="{% static 'images/ep4.jpeg' %} " data-lightbox="mygallery" data-title=""> <img
+                                                src="{% static 'images/ep4.jpeg' %} " style="width:100%"></a>
+
+                        </div>
+                </div>
+        </div>
+</section>
+<!-- Footer Start -->
+{% endblock pagecontent %}

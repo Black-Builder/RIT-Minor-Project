@@ -1,0 +1,122 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+FEE STRUCTURE : RIT
+{% endblock title %}
+
+{% block maincss %}
+<style>
+    .dropdown-menu {
+        animation-name: Mzoom;
+        animation-duration: .5s;
+        /* for animation on hover*/
+
+    }
+
+    .dropdown:hover>.dropdown-menu {
+
+        display: block
+            /* for hover effect*/
+        ;
+    }
+
+    @keyframes Mzoom {
+        from {
+            opacity: 0;
+            transform: scale3d(.2, .2, .2);
+            -webkit-transform: scale3d(.2, .2, .2);
+        }
+
+        50% {
+            opacity: 1;
+        }
+    }
+
+    
+</style>
+{% endblock maincss %}    
+
+{% block pagetop %}
+    <!-- Admission-Cover Start -->
+    <section class="top-cover">
+        <img src="{% static 'images/ep22(1).jpg' %}" class="cover" alt="">
+    </section>
+    <!-- Admission-Cover End  -->
+{% endblock pagetop %}
+
+{% block pagecontent %}
+    <section class="text-gray-700 body-font">
+        <div class="container px-7 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full ">
+                        <h1 class="text-4xl font-medium title-font mb-2 text-blue-700">FEE STRUCTURE</h1>
+                        <div class="flex mb-2 justify-center">
+                                <div class="w-24 h-1 rounded-full bg-blue-600 inline-flex"></div>
+                        </div>
+                        <p class="lg:w-2/2 sm:text-2xl font-medium text-2xl text-gray-700 mx-auto leading-relaxed text-base">
+                        Fee for all students are given  below based on their gender and category. Please go through it.        
+                                
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-gray-700 body-font">
+            <div class="container px-7 py-24 mx-auto">
+                    <div class="flex flex-col text-center">
+                    
+                        <table class="table-hover">
+                            <thead class="bg-blue-600 text-gray-200">
+                                <tr>
+                                    <th scope="col">S.NO</th>
+                                    <th scope="col">CATEGORY</th>
+                                    <th scope="col">GENDER</th>
+                                    <th scope="col">FEE (PER SEMESTER)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">01</th>
+                                    <td>General(GN)</td>
+                                    <td>Boys</td>
+                                    <td><b>3000</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">02</th>
+                                    <td>General(GN)</td>
+                                    <td>Girls</td>
+                                    <td><b>2500</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">03</th>
+                                    <td>(OBC)</td>
+                                    <td>Boys</td>
+                                    <td><b>3000</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">04</th>
+                                    <td>(OBC)</td>
+                                    <td>Girls</td>
+                                    <td><b>3000</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">05</th>
+                                    <td>(SC/ST)</td>
+                                    <td>Boys</td>
+                                    <td><b>2000</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">06</th>
+                                    <td>(SC/ST)</td>
+                                    <td>Girls</td>
+                                    <td><b>2000</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </section>               
+        {% endblock pagecontent %}
+        

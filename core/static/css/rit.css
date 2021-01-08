@@ -1,0 +1,13 @@
+
+.carousel-caption {
+    padding-bottom: auto !important;
+}
+
+.carousel-caption h3{
+    padding-bottom: 10px auto;
+}
+.carousel-caption p{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+}
+

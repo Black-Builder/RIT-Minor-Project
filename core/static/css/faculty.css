@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Top Fixed Cover */
+.top-cover{
+    width: 100%;
+    background-color: black;
+}
+
+.cover{
+    width: 100%;
+    opacity: 0.5;
+    
+}
+/* Top Fixed Cover End */

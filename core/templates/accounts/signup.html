@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP : RIT</title>
+</head>
+
+<body>
+    <form action="" method="POST" novalidate>
+        {% csrf_token %} 
+        <br> First Name <input type="text" name="Firstname">
+        <br> Last Name <input type="text" name="Lastname">
+        <br> Email <input type="email" name="Email">
+        <br> Username <input type="text" name="Username">
+        <br> Password <input type="password" name="Password">
+        <br> Confirm Password <input type="password" name="Password2">
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+    <div>
+    {% for message in messages %}
+    <h2>
+    {{messages}}
+    </h2>
+    {% endfor %}
+    </div>
+</body>
+
+</html>

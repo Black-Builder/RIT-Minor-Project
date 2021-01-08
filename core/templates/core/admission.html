@@ -1,0 +1,211 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+    {% block maincss %}
+
+    <style>
+        .top-cover {
+            width: 100%;
+            background-color: black;
+        }
+
+        .cover {
+            width: 100%;
+            opacity: 0.5;
+        }
+    </style>
+    {% endblock maincss %}
+    
+    {% block title %}
+    ADMISSION PROCEDURE : RIT
+    {% endblock title %}
+
+    {% block pagetop %}
+    <!-- Admission-Cover Start -->
+    <section class="top-cover">
+        <img src="{% static 'images/ep28(1).jpg' %}" class="cover" alt="">
+    </section>
+    <!-- Admission-Cover End  -->
+    {% endblock pagetop %}
+
+    {% block pagecontent %}
+
+    <section class="text-gray-500 bg-white body-font">
+        <div class="container px-7 py-24 mx-aotu">
+            <div class="flex flex-col text-center w-full mb-10">
+                <h1 class="text-4xl xm:text-2xl font-medium title-font mb-2 text-blue-700">ADMISSION PROCEDURE</h1>
+                <div class="flex mb-2 justify-center">
+                    <div class="w-24 h-1 rounded-full bg-blue-600 inline-flex"></div>
+                </div>
+                <p
+                    class="lg:w-2/2 sm:text-2xl xm:text-xl mx-10 font-medium text-2xl text-gray-700 leading-relaxed text-base">
+                    The
+                    admission procedure takes several steps to be followed,
+                    if you want to take admission in our institute then the
+                    steps are menstioned below please go through it. <br> Read carefully.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+
+
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div
+                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+                    1</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-600 rounded-full inline-flex items-center justify-center">
+                        <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-pencil-square"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                            <path fill-rule="evenodd"
+                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                        </svg>
+                    </div>
+                    <div class="flex-col sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-2xl sm:text-2xl">Fill Application Form
+                        </h2>
+                        <p class="leading-relaxed text-xl sm:text-xl">First you need to go <a
+                                href="https://delhidiploma.admissions.nic.in/">https://delhidiploma.admissions.nic.in/</a>
+                            and fill the application form. All the deatils that will be required
+                            are menstioned on the website of delhi diploma, you can go and check it out any time.
+                        </p>
+                        <a href="https://delhidiploma.admissions.nic.in/webinfo/File/GetFile?FileId=13&LangId=P"
+                            class="btn bg-blue-500 hover:bg-blue-700 text-white mt-2" target="_blank">Application
+                            Form</a>
+                        <a href="https://delhidiploma.admissions.nic.in/webinfo/File/GetFile?FileId=17&LangId=P"
+                            class="btn bg-blue-500 hover:bg-blue-700 text-white mt-2" target="_blank">Process
+                            Overview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div
+                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+                    2</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-600 rounded-full inline-flex items-center justify-center">
+                        <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-book-half" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8.5 2.687v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
+                    <div class="flex-col sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-2xl sm:text-2xl">Entrance Exam Test
+                        </h2>
+                        <p class="leading-relaxed text-xl sm:text-xl">After, successfully registration yourself appear
+                            for Common Entrance Test(CET) Exam held every year. The date of exam, center and all the
+                            important information will be given on the <strong>Admit Card</strong>.
+                            <strong>Rank</strong> of every student will be alloted as a result on the basis of their
+                            performance in the exam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div
+                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+                    3</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-600 rounded-full inline-flex items-center justify-center">
+                        <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-gear-wide-connected"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 0 0-9.995 4.998 4.998 0 0 0 0 9.996z" />
+                            <path fill-rule="evenodd"
+                                d="M7.375 8L4.602 4.302l.8-.6L8.25 7.5h4.748v1H8.25L5.4 12.298l-.8-.6L7.376 8z" />
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-2xl sm:text-2xl">Counseling Process
+                        </h2>
+                        <p class="leading-relaxed text-xl sm:text-xl">Counseling process is the most important part
+                            among all others. There are four rounds in the counseling and candidates can apply for every
+                            round on the basis of merit.
+                        </p>
+                        <a href="https://delhidiploma.admissions.nic.in/webinfo/File/GetFile?FileId=75&LangId=P"
+                            class="btn bg-blue-500 hover:bg-blue-700 text-white mt-2" target="_blank">Counseling Process
+                        </a>
+                        <a href="https://delhidiploma.admissions.nic.in/webinfo/File/GetFile?FileId=76&LangId=P"
+                            class="btn bg-blue-500 hover:bg-blue-700 text-white mt-2" target="_blank">Counseling
+                            Schedule</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div
+                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+                    4</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-600 rounded-full inline-flex items-center justify-center">
+                        <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-person-bounding-box"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z" />
+                            <path fill-rule="evenodd"
+                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-2xl sm:text-2xl">Freezing Seat</h2>
+                        <p class="leading-relaxed text-xl sm:text-xl">VHS cornhole pop-up, try-hard 8-bit iceland
+                            helvetica. Kinfolk
+                            bespoke try-hard cliche palo santo offal.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div
+                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+                    5</div>
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-600 rounded-full inline-flex items-center justify-center">
+                        <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-patch-check-fll"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984a.5.5 0 0 0-.708-.708L7 8.793 5.854 7.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-2xl sm:text-2xl">Document Verification
+                        </h2>
+                        <p class="leading-relaxed text-xl sm:text-xl">VHS cornhole pop-up, try-hard 8-bit iceland
+                            helvetica. Kinfolk
+                            bespoke try-hard cliche palo santo offal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock pagecontent %}
+    

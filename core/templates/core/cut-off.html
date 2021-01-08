@@ -1,0 +1,111 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+FEE STRUCTURE : RIT
+{% endblock title %}
+
+{% block maincss %}
+<style>
+    .dropdown-menu {
+        animation-name: Mzoom;
+        animation-duration: .5s;
+        /* for animation on hover*/
+
+    }
+
+    .dropdown:hover>.dropdown-menu {
+
+        display: block
+            /* for hover effect*/
+        ;
+    }
+
+    @keyframes Mzoom {
+        from {
+            opacity: 0;
+            transform: scale3d(.2, .2, .2);
+            -webkit-transform: scale3d(.2, .2, .2);
+        }
+
+        50% {
+            opacity: 1;
+        }
+    }
+
+    
+</style>
+{% endblock maincss %}    
+
+{% block pagetop %}
+    <!-- Admission-Cover Start -->
+    <section class="top-cover">
+        <img src="{% static 'images/ep22(1).jpg' %}" class="cover" alt="">
+    </section>
+    <!-- Admission-Cover End  -->
+{% endblock pagetop %}
+
+{% block pagecontent %}
+    <section class="text-gray-700 body-font">
+        <div class="container px-7 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full ">
+                        <h1 class="text-4xl font-medium title-font mb-2 text-blue-700">CUT OFFS OF PREVIOUS</h1>
+                        <div class="flex mb-2 justify-center">
+                                <div class="w-24 h-1 rounded-full bg-blue-600 inline-flex"></div>
+                        </div>
+                        <p class="lg:w-2/2 sm:text-2xl font-medium text-2xl text-gray-700 mx-auto leading-relaxed text-base">
+                        All the previous year cut-offs are given below with year and round. There are four rounds in Delhi 
+                        CET counselling for more information about counselling process Please visit on Delhi Cet official website. Please go through it.        
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-gray-700 body-font">
+            <div class="container px-7 py-24 mx-auto">
+                    <div class="flex flex-col text-center">
+                    
+                        <h1 class="text-3xl font-medium title-font mb-2 text-gray-600">Cut-OFFS of 2018</h1>
+                        <table class="table-hover">
+                            <thead class="bg-blue-600 text-gray-200">
+                                <tr>
+                                    <th scope="col">S.NO</th>
+                                    <th scope="col">ROUNDS</th>
+                                    <th scope="col">CUT-OFF</th>
+                                    <th scope="col">DOWNLOAD</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">01</th>
+                                    <td>Round 1</td>
+                                    <td><a href="{% static 'media/2018 Cutoff Round 1.pdf' %}"></a></td>
+                                    <td><b<a href="{% static 'media/2018 Cutoff Round 1.pdf' %}" download="Delhi CET 2018 Cutoff Round 1">Click Here</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">02</th>
+                                    <td>Round 2</td>
+                                    <td><b<a href="{% static 'media/2018 Cutoff Round 2.pdf' %}">View</a></b></td>
+                                    <td><b><a href="{% static 'media.2018 Cutoff Round 2.pdf' %}" downlad="Delhi CET 2018 Cutoff Round 2"></a>Click Here</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">03</th>
+                                    <td>Round 3</td>
+                                    <td><b><a href="{% static 'media/2018 Cutoff Round 3.pdf' %}"></a>View</b></td>
+                                    <td><b><a href="{% static 'media/2018 Cutoff Round 3.pdf' %}" downlad="Delhi CET 2018 Cutoff Round 3"></a>Click Here</b></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">04</th>
+                                    <td>Round 4</td>
+                                    <td><b><a href="{% static 'media/2018 Cutoff Round 4.pdf' %}">View</a></b></td>
+                                    <td><b><a href="{% static 'media/2018 Cutoff Round 4.pdf' %}" downlad="Delhi CET 2018 Cutoff Round 4">Click Here</a></b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </section>               
+        {% endblock pagecontent %}
+        

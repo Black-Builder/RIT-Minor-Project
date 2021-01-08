@@ -1,0 +1,420 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+ABOUT : RIT
+{% endblock title %}
+
+{% block maincss %}
+<style>
+    .top-cover {
+        width: 100%;
+        background-color: black;
+    }
+
+    .cover {
+        width: 100%;
+        opacity: 0.5;
+
+    }
+
+    .dropdown:hover>.dropdown-menu {
+
+        display: block;
+    }
+
+    @keyframes Mzoom {
+        from {
+            opacity: 0;
+            transform: scale3d(.2, .2, .2);
+            -webkit-transform: scale3d(.2, .2, .2);
+        }
+
+        50% {
+            opacity: 1;
+        }
+    }
+
+    .card,
+    .card-header {
+        background-color: #e8eeff !important;
+        border: none !important;
+        padding: 0 !important;
+        margin-bottom: 30px;
+
+    }
+
+    .card {
+        box-shadow: 0px 2px 20px 0 rgba(97, 120, 212, 0.829);
+    }
+
+    .btn-link {
+        width: 100%;
+        height: 60px;
+        color: #000;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+
+    .btn-link:hover {
+        text-decoration: none;
+        color: red;
+    }
+
+    .btn-link:visited {
+        text-decoration: none;
+    }
+
+    .btn-link:after {
+        content: '\2212';
+
+        width: 35px;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 5px;
+        right: 15px;
+        top: 15px;
+        position: absolute;
+        background-color: purple;
+    }
+
+    .btn-link.collapsed:after {
+        content: '\002B';
+        text-decoration: none;
+
+    }
+
+    .btn-link:before {
+        content: '';
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        background: #2c5282;
+        z-index: 1;
+        transform: rotate(45deg);
+        left: 30px;
+        top: 47px;
+    }
+
+    .notification_content {
+
+        margin: 15px;
+        /*  box-shadow: 1px 1px 10px 2px #333;*/
+        overflow: hidden;
+
+        background-color: white;
+        padding: 10px;
+
+    }
+
+
+
+    .notification_content .moving-body {
+
+        height: 200px;
+        padding: 2px;
+
+    }
+
+
+
+    .notification_content .info a {
+        text-decoration: none;
+        font-weight: bold;
+
+
+        color: purple;
+
+    }
+
+    .notification_content .info a:hover {
+        text-decoration: none;
+        font-weight: bolder;
+        text-align: center;
+        padding-left: 2px;
+        padding-right: 2px;
+        color: purple;
+
+
+
+    }
+
+       .img {
+        width: 150px;
+        height: 150px;
+        float: left;
+        display: flex;
+        border-radius: 45px;
+
+    }
+
+    .main-heading {
+        font-size: 30px;
+
+        font-weight: bolder;
+        padding: 20px;
+        color: white;
+        font-family: 'Roboto'
+    }
+
+    .main-heading2 {
+
+        background-color: #e8eeff;
+        font-weight: bolder;
+        padding: 20px;
+        font-size: 30px;
+        color: blue;
+        font-family: 'Roboto'
+    }
+
+
+    .content {
+        padding: 15px;
+        text-align: justify;
+        line-height: 30px;
+        font-size: 25px;
+        font-family: grenze;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    .content2 {
+        padding: 15px;
+        text-align: justify;
+        line-height: 30px;
+        font-size: 25px;
+        font-family: grenze;
+        font-size: 20px;
+        color: purple;
+        font-weight: bold;
+
+
+    }
+
+    a:hover {
+        color: white;
+        font-weight: bolder;
+    }
+</style>
+{% endblock maincss %}
+
+{% block pagetop %}
+<section class="top-cover">
+    <img src="{% static 'images/cp.jpg' %}" class="cover" alt="">
+</section>
+{% endblock pagetop %}
+
+{% block pagecontent %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 mt-2">
+
+            <div class="container-fluid  bg-blue-800">
+                <h4 class="main-heading">MESSAGE FOR STUDENT</h4>
+                <hr>
+                <p class=" content text-light">
+                    <img src="{% static 'images/cp1.jpg' %}" width="250px" height="250px" alt=""
+                        style="  border-radius:45px; float:left;margin: 5px 10px;">Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Accusamus repellat quo ex cum vel saepe architecto optio illo iure inventore,
+                    odio fugiat est? Aspernatur, adipisci aperiam. Nemo odio pariatur voluptate.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi illo adipisci itaque ullam
+                    quaerat voluptate laudantium officiis accusantium asperiores deleniti inventore, soluta
+                    molestias. Asperiores tempora temporibus explicabo eos blanditiis voluptate.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ratione necessitatibus
+                    deserunt laborum consectetur, amet distinctio in eaque tempore et odit commodi autem optio vero
+                    sint eos. Voluptatem, adipisci nostrum!
+                </p>
+            </div>
+            <div class="container-fluid my-2 bg-blue-800">
+                <h4 class="main-heading ">IMPORTANT LINKS</h4>
+                <hr>
+                <div class="content text-light "><a href=""> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptas
+                        quas perspiciatis,deleniti.</a>
+                    <hr>
+                    <a href="" class="d-block "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                        quas perspiciatis, deleniti.</a>
+                    <hr>
+                    <a href="" class="d-block"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                        quas perspiciatis, </a>
+                    <hr>
+                    <a href="" class="d-block"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                        quas perspiciatis, </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-8  mt-2" style="background-color:#e8eeff;">
+            <div class="container-fluid " style="background-color:#e8eeff;">
+                <h2 class="main-heading2  ">ABOUT-US</h2>
+                <hr>
+                <div class="container-fluid" style="background-color:w#e8eeff;">
+                    <p class="content2">
+                        RAJOKARI INSTITUTE OF TECHNOLOGY ,RAJOKARI-VILLAGE came into being in 2017 by _______through
+                        act___of___________
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quisquam minima,
+                        obcaecati eos suscipit excepturi deleniti quae, sed quidem accusantium tempora facere quam
+                        voluptatem cupiditate unde? Nisi natus ut id!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ipsum molestiae sed quod
+                        corporis iusto maiores quaerat laboriosam? Maiores, ipsum. Beatae dolore, repellat quis
+                        libero debitis cumque maiores officiis dolor!
+                    </p>
+                    <h3 class="main-heading2">location</h3>
+                    <p class="content2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quas perspiciatis,
+                        quisquam facilis error officiis obcaecati molestiae non numquam fugit deleniti. Debitis
+                        praesentium sit expedita maxime. Autem optio blanditiis repellat.
+                    </p>
+
+                    <h3 class="main-heading2">Campus</h3>
+                    <p class="content2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem debitis
+                        obcaecati accusamus iste vitae facilis deserunt. Corrupti perferendis laudantium inventore
+                        iste repellendus, quos ea qui nobis quisquam corporis tempora! Praesentium?</p>
+                    <h3 class="main-heading2">Academic Programmes</h3>
+                    <p class="content2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione id maiores amet doloribus
+                        quasi? Fugit eum illum, delectus consequuntur molestias placeat sit perferendis dolorum
+                        autem quam neque, accusamus, doloremque doloribus.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid my-4">
+    <div class="row">
+        <div class="col-sm-12 col-lg-4 col-md-12 my-4">
+            <div class="container-fluid" style="text-align: center;">
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="container-fluid my-2">
+                <video width="100%" controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container-fluid ">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0 bg-blue-800">
+                                <button class="btn btn-link btn-block text-left bg-blue-800 type=" button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    News & Updates
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="notification_content">
+                                    <div class="main-content">
+
+                                        <marquee behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()"
+                                            direction="up" scrollamount="2" class="moving-body text-center">
+                                            <p class="info"><a href="">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. </a></p>
+                                            <hr>
+                                            <p class="info"><a href="">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. </a></p>
+                                            <hr>
+                                            <p class="info"><a href="">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. </a></p>
+                                            <hr>
+                                            <p class="info"><a href="">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. </a></p>
+                                            <hr>
+                                            <p class="info"><a href="">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. </a></p>
+                                            <hr>
+                                        </marquee>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0 bg-blue-800">
+                                <button class="btn btn-link btn-block text-left collapsed bg-blue-800" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    NOTIFICATION
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="notification_content">
+                                    <div class="main-content">
+
+                                        <marquee behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()"
+                                            direction="up" scrollamount="2" class="moving-body text-center">
+                                            <p class="info"><a href="">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. </a></p>
+                                            <hr>
+                                            <p class="info"><a href="">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. </a></p>
+                                            <hr>
+                                            <p class="info"><a href="">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. </a></p>
+                                            <hr>
+                                            <p class="info"><a href="">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. </a></p>
+                                            <hr>
+                                            <p class="info"><a href="">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. </a></p>
+                                            <hr>
+                                        </marquee>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-12 col-lg-8 col-md-12 my-4">
+            <div class=" container-fluid" style="background-color: #e8eeff;">
+                <h2 class="main-heading2">vission</h2>
+                <p class="content2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad possimus,
+                    consectetur error alias quibusdam provident, neque nobis tempora quia enim quod assumenda
+                    blanditiis architecto repudiandae quaerat itaque, laborum porro libero!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi corrupti cum ex alias numquam
+                    blanditiis, exercitationem possimus expedita et ullam ipsa temporibus eius quaerat nostrum
+                    voluptas repellendus laudantium eveniet sunt!
+                </p>
+                <hr>
+                <h2 class="main-heading2">mission</h2>
+                <p class="content2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam sequi neque odit molestiae
+                    nihil voluptas. Minima culpa quo enim velit error labore recusandae ipsam at, laboriosam facilis
+                    natus ipsa ut!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, ipsam! Accusantium sequi amet
+                    itaque quas placeat? Nemo eveniet nesciunt placeat consectetur blanditiis voluptatum officiis
+                    culpa ducimus cumque non, labore distinctio.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock pagecontent %}
